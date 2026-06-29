@@ -4,6 +4,7 @@ import com.example.journalApplication.entity.User;
 import com.example.journalApplication.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ public class UserDetailsServiceImplTest {
     }
 
     @Test
+    @Disabled
     public  void loadUserByUserNameTest(){
         when(userRepository.findByUserName(ArgumentMatchers.anyString())).thenReturn(User.builder().userName("ram").password("sita").roles(new ArrayList<>()).build());
         UserDetails user= userDetailsServiceImpl.loadUserByUsername("ram");

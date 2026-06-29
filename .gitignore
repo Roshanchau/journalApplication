@@ -8,6 +8,8 @@ target/
 **/src/main/resources/application-dev.yml
 **/src/main/resources/application-prod.yml
 
+journalApp*.log
+
 ### STS ###
 .apt_generated
 .classpath

@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<sonar.projectKey>journalApplication</sonar.projectKey>
+		<sonar.organization>Roshan Chaudhary</sonar.organization>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -79,6 +81,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>5.2.0.4988</version>
 			</plugin>
 		</plugins>
 	</build>
